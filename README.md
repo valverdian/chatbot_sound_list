@@ -5,11 +5,13 @@ Load up your chatbot and pass in the path to that folder. Set everything else
 and then the script will take care of playing all of those sounds as commands. 
 
 **Example path** 
+
 ```G:\chatbot_sounds\mp3\```
 
 *note: (the \ at the end is very important)*
 
 **Additional Info**
+
 All sound commands will be the name with a ! at the start. For example a sound named:
 "shouting" will become a command "!shouting". 
 
