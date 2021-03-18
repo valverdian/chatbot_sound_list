@@ -1,4 +1,4 @@
-# Sound List
+# Sounds List
 This [Streamlabs Chatbot](https://streamlabs.com/chatbot) script is an easy way to add all / remove sound commands to your bot.
 Load up your chatbot, pass in a path, refresh your scripts, Set everything else and then the script will take care of playing all of those sounds as commands. 
 
