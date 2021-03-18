@@ -4,7 +4,7 @@
 		"type": "textbox",
 		"value": "!sounds",
 		"label": "Sound List Command",
-		"tooltip": "Command to get all of the sounds back",
+		"tooltip": "Command to get a list of all the sounds, leave empty if you don't want any list command.",
 		"group": "General"
 	},
 	"soundsFolderPath": {

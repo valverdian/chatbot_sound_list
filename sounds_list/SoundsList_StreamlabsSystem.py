@@ -14,7 +14,7 @@ ScriptName = "Sounds List"
 Website = "https://www.twitch.tv/valverdian"
 Description = "Make all your sound commands by just adding them to a file."
 Creator = "ValVerdian"
-Version = "1.0.0"
+Version = "1.1.0"
 
 #---------------------------
 #   Define Global Variables
@@ -67,7 +67,7 @@ def Execute(data):
 	# Now that the command isn't empty we can analyse it
 	potentialCommand = data.GetParam(0)
 
-	if potentialCommand.strip() == ScriptSettings.soundListCommand:
+	if ScriptSettings.soundListCommand and potentialCommand.strip() == ScriptSettings.soundListCommand:
 		if Parent.IsOnCooldown(ScriptName, ScriptSettings.soundListCommand):
 			send_message(ScriptSettings.soundListCommand + " is on cooldown. Time remaining: " + str(Parent.GetCooldownDuration(ScriptName, ScriptSettings.soundListCommand)) + " seconds.")
 		else:
