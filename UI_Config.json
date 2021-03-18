@@ -1,0 +1,51 @@
+{
+	"output_file": "settings.json",
+	"soundListCommand": {
+		"type": "textbox",
+		"value": "!sounds",
+		"label": "Sound List Command",
+		"tooltip": "Command to get all of the sounds back",
+		"group": "General"
+	},
+	"soundsFolderPath": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Sound files",
+		"tooltip": "Specify the folder to the sounds to trigger. (Include the '/' at the end)",
+		"group": "General"
+	},
+    "soundListCooldown": {
+        "type": "numberbox",
+        "value": 600,
+        "label": "Sound List Command Cooldown (seconds)",
+        "tooltip": "This is a global cooldown for the command you use to retrieve the sound list."
+    },
+	"soundVolume": {
+		"type": "slider",
+		"label": "Volume",
+		"value": 100,
+		"min": 0,
+		"max": 200,
+		"ticks": 1,
+		"tooltip": "This is the volume applied to the sounds."
+	},
+	"perSoundCooldown": {
+        "type": "numberbox",
+        "value": 30,
+        "label": "Sound Cooldown (seconds)",
+        "tooltip": "This is a the cooldown time for each sound in the folder."
+    },
+	"perUserSoundCooldown": {
+        "type": "numberbox",
+        "value": 120,
+        "label": "Per User Sound Cooldown (seconds)",
+        "tooltip": "This is a the cooldown time per user for each sound in the folder."
+    },
+	"EnableDebug": {
+		"type": "checkbox",
+		"value": false,
+		"label": "Enable Debug",
+		"tooltip": "Enable or disable debug logs",
+		"group": "Debug Settings"
+	}
+}
