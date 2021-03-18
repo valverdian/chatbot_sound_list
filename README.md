@@ -25,6 +25,7 @@ note: (the \ at the end is very important)
 - All sound commands will be the name with a ! at the start. For example a sound named:
 "shouting" will become a command "!shouting". 
 - After adding / changing the sounds path, the sounds list will not update until you refresh your scripts. 
+- if you leave the **Sound List Command** field empty. It disables the list command.
 
 ## Thank you
 I hope this script is useful for you. If you have any thoughts on it, raise a github issue with a suggestion or lemme know while I'm [streaming](https://www.twitch.tv/valverdian) or send me an @ on [twitter](https://www.twitter.com/valverdian)!

@@ -14,7 +14,7 @@ ScriptName = "Sounds List"
 Website = "https://www.twitch.tv/valverdian"
 Description = "Make all your sound commands by just adding them to a file."
 Creator = "ValVerdian"
-Version = "1.1.0"
+Version = "1.0.1"
 
 #---------------------------
 #   Define Global Variables
