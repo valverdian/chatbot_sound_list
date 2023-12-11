@@ -17,3 +17,6 @@ Example path: G:\chatbot_sounds\mp3\
 All sound commands will be the name with a ! at the start. For example a sound named:
 "shouting" will become a command "!shouting". 
 ===============================================================================
+
+Added functionality by ni6hant:
+Remove points from user.
