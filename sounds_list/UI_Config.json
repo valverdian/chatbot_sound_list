@@ -14,6 +14,13 @@
 		"tooltip": "Specify the folder to the sounds to trigger. (Include the '/' at the end)",
 		"group": "General"
 	},
+	"cost": {
+        "type": "numberbox",
+        "value": 120,
+        "label": "Cost to play a sound",
+        "tooltip": "The cost to play a sound. Duh!",
+		"group": "General"
+    },
     "soundListCooldown": {
         "type": "numberbox",
         "value": 600,

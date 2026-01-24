@@ -37,6 +37,7 @@ class Settings(object):
 			self.perSoundCooldown = 60
 			self.perUserSoundCooldown = 120
 			self.EnableDebug = False
+			self.cost = 100
 
     def Reload(self, jsondata):
         self.__dict__ = json.loads(jsondata, encoding="utf-8")
@@ -90,7 +91,9 @@ def Execute(data):
 			if potentialCommand in Sounds:
 				debug_log("Successfully found '" + potentialCommand + "' in Sounds")
 				PlaySound(potentialCommand, 100, username)
-
+				#Remove costs
+				if Parent.RemovePoints(data.User, username, ScriptSettings.cost):
+					debug_log("Removed Points for " + str(data.User) + " " + str(username) + " " + str(ScriptSettings.cost) )
 				# Apply both global and user cooldowns
 				Parent.AddCooldown(ScriptName, "!"+potentialCommand, ScriptSettings.perSoundCooldown)
 				Parent.AddUserCooldown(ScriptName, "!"+potentialCommand, data.User, ScriptSettings.perUserSoundCooldown)
